@@ -1,0 +1,557 @@
+html {    
+    box-sizing: border-box;
+    scroll-behavior: smooth; 
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Red Hat Text', normal;
+    min-width: 1440px;
+    margin: 0;
+}
+
+/*Header styles start*/
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    background: rgba(242, 120, 92, 0.7);
+    box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90px;
+}
+
+.header_wrapper {
+    display: flex;
+}
+
+.header_logo {
+    display: flex;
+    align-items: center;
+    width: 216px;
+    height: 31px;
+    margin-top: 25px;
+    margin-right: 158px;
+}
+
+.header_nav {
+    width: 527px;
+    height: 21px;
+}
+
+.header_logo-title {
+    font-family: 'Magra';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+    height: 31px;
+    white-space: nowrap;
+}
+
+.header_logo-link {
+    margin-right: 6px;
+}
+
+.header_list {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 42px;
+    margin-top: 35px;
+}
+
+.header_item {   
+    list-style: none;
+}
+
+.header_item:last-child {
+    margin-right: 0;
+}
+
+.header_item a {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: white;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.header_item a:hover, .header_item a:focus, .header_item a:active {
+    opacity: .75;
+}
+
+.header_link-order1 {
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+
+.header_link-order2 {
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+}
+
+.header_link-order3 {
+    flex: none;
+    order: 2;
+    flex-grow: 0;
+}
+
+.header_link-order4 {
+    flex: none;
+    order: 3;
+    flex-grow: 0;
+}
+
+.header_button {
+    width: 103px;
+    height: 41px;
+    border: none;
+    margin-top: 25px;
+    background: #0D606F;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 25%), 0px 2px 3px rgb(13 96 111 / 16%);
+    border-radius: 10px;
+    color: white;
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    cursor: pointer;
+}
+
+.header_button-login {
+    margin-left: 196px;
+}
+/*Header styles end*/
+
+/*preview styles start*/
+.preview {
+    height: 765px;
+    background: url(./asseets/img/background.png) no-repeat center;
+    background-size: cover;
+    padding-top: 122px;
+}
+.preview_title {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 96px;
+    color: #FFFFFF;
+    max-width: 892px;
+    margin: 0;
+    padding-right: 32px;
+    position: absolute;
+}
+
+.preview_description {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 0;
+    padding-top: 224px;
+}
+
+.preview_input {
+    border: none;
+    width: 892px;
+    height: 95px;
+    padding: 32px 0 41px 41px;
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F2785C;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 16px;
+    margin-top: 46px;
+}
+
+.preview_label {
+    position: relative;
+}
+
+.preview_input::placeholder {
+    font-family: 'Aleo';
+    font-style: italic;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+    color: #F2785C;
+}
+
+.preview_button {
+    font-family: 'Red Hat Text';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    position: relative;
+    top: 6px;
+    right: 244px;
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    border: none;
+    width: 228px;
+    height: 59px;
+    cursor: pointer;
+}
+
+/*preview styles end*/
+
+/*steps styles start*/
+
+.steps {
+    margin: 80px 11.5px 0 0;
+}
+
+.steps_container {
+    /* display: flex;
+    flex-direction: column;
+    align-items: stretch; */    
+    height: 247px;
+}
+
+.steps_title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+    margin: 0 0 40px 283px;
+}
+
+.steps_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    background: #F2785C;
+    border-radius: 16px;
+}
+
+.steps-item-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.steps_options {
+    display: flex;
+    justify-content: space-around;
+}
+
+.steps_item-text {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+    margin-top: 30px;
+}
+
+/*steps styles end*/
+
+/*destinations styles start*/
+
+.destinations {
+    width: 100%;
+    height: 1042px;
+    margin-top: 88px;
+    overflow: hidden;
+}
+
+.destinations img {
+    border-radius: 16px;
+}
+
+.destinations h1 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+    margin: 0;
+    padding-bottom: 46px;
+}
+
+.destinations_slides {
+    list-style-type: none;
+    width: 2520px;
+    height: 800px;
+    display: flex;
+    margin: 0 0 0 -540PX;
+}
+
+.destinations_slides-item {
+    border-radius: 16px;
+}
+
+.destinations_slides-item-text {
+    position: relative;
+    left: 15px;
+    top: 718px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+
+.destinations_slides li {
+    width: 800px;
+    height: 800px;
+    margin: 0 60px;
+}
+
+.destinations_slides li:nth-child(1) {
+    background-image: url('./asseets/img/destinations/23.png');
+    background-repeat: no-repeat;
+}
+
+.destinations_slides li:nth-child(2) {
+    background-image: url('./asseets/img/destinations/Japan.png');
+    background-repeat: no-repeat;
+}
+
+.destinations_slides li:nth-child(3) {
+    background-image: url('./asseets/img/destinations/USA.png');
+    background-repeat: no-repeat;
+}
+
+.destinations_buttons {
+    display: flex;
+    column-gap: 10px;
+    list-style: none;
+    padding-left: 0;
+    margin-left: 681px;
+    height: 20px;
+}
+
+.destinations_buttons-btn {
+    width: 20px;
+    height: 20px;
+    background: rgba(242, 120, 92, 0.5);
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.destinations_buttons-btn:hover, .destinations_buttons-btn:focus, .destinations_buttons-btn:active {
+    opacity: .75;
+} 
+
+.destinations_show-more {
+    margin-left: 607px;
+    margin-top: 46px;
+}
+
+.destinations_show-more-btn {
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    width: 228px;
+    height: 59px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 32px;
+    gap: 10px;
+}
+
+/*destinations styles end*/
+
+/*Bottom section styles start*/
+
+.background-bottom {
+    margin-top: 182px;
+}
+
+.background-bottom-image {
+    width: 1442px;
+    height: 1331px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('./asseets/img/background-bottom.png');
+    width: 100%;
+}
+
+.background-bottom-cover {
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.7);
+    margin-top: -1331px;
+    width: 100%;
+    height: 1270px;
+}
+
+/*Bottom section styles end*/
+
+/*Stories section styles start*/
+
+.stories {  
+    position: absolute;
+    left: 119px;
+    top: 2311px;
+    width: 1201px;
+    height: 1322px;
+    margin: 0 auto;
+}
+
+.stories img {
+    border-radius: 16px;
+    filter: drop-shadow(0px 4px 4px #0D606F);
+}
+
+.stories h1 {
+    text-align: center;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 53px;
+    color: #F2785C;
+    margin: 0;
+}
+
+.stories_list-block {
+    margin-top: 80px;
+}
+
+.stories_list-item {
+    display: flex;
+    height: 250px;
+    margin-bottom: 30px;
+}
+
+.stories_list-item:last-child {
+    margin-bottom: 0;
+}
+
+.stories_list-description {
+    margin-left: 40px;
+    width: 700px;
+}
+
+.stories_list-description h2 {    
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 42px;
+    color: #0D606F;
+    margin: 0;
+}
+
+.stories_list-description p, a {
+    font-family: 'Aleo';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #0D606F;
+}
+
+.stories_list-description a {
+    font-weight: bold;
+}
+
+.stories-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.stories-btn {
+    background: #0D606F;
+    box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+    border-radius: 10px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+    width: 228px;
+    height: 59px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    padding: 10px 32px;
+    gap: 10px;
+}
+
+/*Stories section styles end*/
+
+/*Footer styles start*/
+
+.footer {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    white-space: nowrap;
+}
+
+.footer-title {
+    margin-top: 7px;
+}
+
+.footer_container {
+    display: flex;
+    margin-left: 590px;
+    width: 728.96px;
+    height: 33.65px;
+    margin-top: 14px;
+}
+
+.social_media {
+    margin-left: 329.4px;
+}
+
+.social_media-list {
+    list-style: none;
+    display: flex;
+    column-gap: 24.21px;
+    align-items: center;
+    margin: 0;
+}
+
+/*Footer styles end*/
+
+
